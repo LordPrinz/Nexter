@@ -19,3 +19,8 @@ body {
     color: $color-grey-dark-2;
     padding: .5rem;
 }
+
+.container {
+    display: grid;
+    grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+}
