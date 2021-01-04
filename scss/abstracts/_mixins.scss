@@ -1,0 +1,104 @@
+//Media Query
+
+/*
+
+0 - 600px: Phone
+600px - 900px : Tablet portrait
+900-1200: Tablet landscape
+1800 + : big desktop
+
+
+$breakpoint arguments
+-phone
+-bp-medium
+-tab-port
+-bp-large
+-tab-land
+-big-desktop
+-special-bp-large
+-special-bp-small
+-huge-desktop
+
+1em - 16px
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media only screen and (max-width: 37.5em) {
+            //600px
+            @content
+        }
+        ;
+    }
+    @if $breakpoint==special-bp-large {
+        @media only screen and (max-width: 78.75em) {
+            //1260px
+            @content
+        }
+        ;
+    }
+    @if $breakpoint==special-bp-small {
+        @media only screen and (max-width: 59.0625em) {
+            //945px
+            @content
+        }
+        ;
+    }
+    @if $breakpoint==bp-medium {
+        @media only screen and (max-width: 50em) {
+            //800px
+            @content
+        }
+        ;
+    }
+    @if $breakpoint==tab-port {
+        @media only screen and (max-width: 56.25em) {
+            //900px
+            @content
+        }
+        ;
+    }
+    @if $breakpoint==bp-large {
+        @media only screen and (max-width: 62.5em) {
+            //1000px
+            @content
+        }
+        ;
+    }
+    @if $breakpoint==tab-land {
+        @media only screen and (max-width: 75em) {
+            //1200px
+            @content
+        }
+        ;
+    }
+    @if $breakpoint==big-desktop {
+        @media only screen and (min-width: 112.5em) {
+            //1800px
+            @content
+        }
+        ;
+    }
+    @if $breakpoint==huge-desktop {
+        @media only screen and (min-width: 125em) {
+            //2000px
+            @content
+        }
+        ;
+    }
+}
+
+//Typography heading
+@mixin heading-type {
+    &--light {
+        color: $color-grey-light-1;
+    }
+    &--dark {
+        color: $color-grey-dark-1;
+    }
+}
+
+%heading {
+    font-family: $font-display;
+    font-weight: 400;
+}
