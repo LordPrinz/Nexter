@@ -52,3 +52,4 @@ $ start index.html
 
 - GitHub [LordPrinz](https://github.com/LordPrinz)
 - Discord [<c2>Lord Prinz ™ 🔥#6396](https://discord.com/users/520676533279522817)
+- [YouTube](https://www.youtube.com/channel/UCbXJjpfKjvrlOAuUCexGtEA)
