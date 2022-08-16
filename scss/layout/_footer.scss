@@ -6,12 +6,26 @@
 
 .nav {
     list-style: none;
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-gap: 2rem;
+    @include respond(special-bp-large) {
+        grid-template-columns: repeat(3, minmax(15rem, 1fr));
+        grid-row: repeat(2, 1fr);
+    }
+    @include respond(tab-land) {
+        grid-row: auto;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+    @include respond(special-bp-small) {
+        grid-template-columns: repeat(3, minmax(15rem, 1fr));
+        grid-row: repeat(2, 1fr);
+    }
+    @include respond(phone) {
+        grid-row: auto;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
     align-items: center;
-
     &__link:link,
     &__link:visited {
         font-size: 1.4rem;
@@ -24,7 +38,6 @@
         display: block;
         transition: all .2s;
     }
-
     &__link:hover,
     &__link:active {
         background-color: rgba(#fff, .05);
