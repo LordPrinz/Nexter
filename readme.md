@@ -1,7 +1,7 @@
 <h1 align="center">Nexter</h1>
 
 <div align="center">
-Landing page of Nexter - home sales agency.</div>
+Landing page of home sales agency called Nexter.</div>
 
 <!-- TABLE OF CONTENTS -->
 

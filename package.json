@@ -1,0 +1,29 @@
+{
+    "name": "nexter",
+    "version": "1.0.0",
+    "description": "Landing page of home sales agency called Nexter",
+    "main": "index.html",
+    "scripts": {
+        "compile:sass": "node-sass sass/main.scss css/main.css -w",
+        "start": "lite-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LordPrinz/Nexter.git"
+    },
+    "keywords": [
+        "scss",
+        "html",
+        "website"
+    ],
+    "author": "LordPrinz",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/LordPrinz/Nexter/issues"
+    },
+    "homepage": "https://github.com/LordPrinz/Nexter#readme",
+    "devDependencies": {
+        "lite-server": "^2.6.1",
+        "node-sass": "^7.0.1"
+    }
+}
